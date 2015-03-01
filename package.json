@@ -1,0 +1,23 @@
+{
+  "name": "quantize-vertices",
+  "version": "1.0.0",
+  "description": "Quantizes vertices to any bit precision",
+  "author": "thibauts",
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "rescale-vertices": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thibauts/quantize-vertices.git"
+  },
+  "keywords": [
+    "quantize",
+    "vertices",
+    "mesh"
+  ]
+}
