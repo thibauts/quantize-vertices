@@ -9,7 +9,7 @@ function roundVertices(positions) {
   });
 }
 
-function quantizeVertices(positions, bits) {
+function quantizeVertices(positions, bits, sourceBounds) {
   if(positions.length === 0) {
     return [];
   }
@@ -27,7 +27,7 @@ function quantizeVertices(positions, bits) {
       : (1 << bits[i]) - 1
   }
 
-  positions = rescaleVertices(positions, bounds);
+  positions = rescaleVertices(positions, bounds, sourceBounds);
   positions = roundVertices(positions);
   return positions;
 }
