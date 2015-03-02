@@ -23,8 +23,8 @@ function quantizeVertices(positions, bits) {
   for(var i=0; i<dimensions; i++) {
     bounds[0][i] = 0;
     bounds[1][i] = (typeof bits === 'number')
-      ? 1 << bits
-      : 1 << bits[i]
+      ? (1 << bits) - 1
+      : (1 << bits[i]) - 1
   }
 
   positions = rescaleVertices(positions, bounds);

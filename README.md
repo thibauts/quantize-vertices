@@ -28,9 +28,9 @@ var positions = quantizeVertices(positions, 8);
 console.log(positions);
 /*
 [
-  [256,   0,   0], 
-  [  0, 128, 128], 
-  [  0, 256, 256] 
+  [255,   0,   0], 
+  [  0, 127, 127], 
+  [  0, 255, 255] 
 ]
 */
 ```
@@ -51,9 +51,9 @@ var positions = quantizeVertices(positions, [2, 4, 8]);
 console.log(positions);
 /*
 [
-  [4,  0,   0], 
-  [0,  8, 128], 
-  [0, 16, 256]
+  [3,  0,   0], 
+  [0,  7, 127], 
+  [0, 15, 255]
 ]
 */
 ```
