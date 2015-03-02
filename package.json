@@ -1,6 +1,6 @@
 {
   "name": "quantize-vertices",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Quantizes vertices to any bit precision",
   "author": "thibauts",
   "license": "MIT",
